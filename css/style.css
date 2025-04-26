@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+RO:wght@100..400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playwrite RO", cursive;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: #ffffff;;
+}
+
+.container01{
+    height: 100vh;
+    padding: 10px 20px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.header{
+    /* border: 1px solid pink; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left{
+    width: 50%;
+    padding:2px 5px;
+}
+
+.header-right {
+    width: 50%;
+    padding:2px 5px;
+}
+
+.header-right ul{
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-right ul li{
+    list-style-type: none;
+}
+
+.header-right ul li:hover{
+    cursor: pointer;
+    color: #FD5A3A;
+    text-decoration: underline solid #FD5A3A;
+    text-underline-offset: 2px;
+}
+
+.body {
+    /* border: 1px solid pink; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.body-left img{
+    width: 70%;
+    height: 70%;
+}
+
+.body-right {
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.body-right h2 {
+    font-size: 1rem;
+}
+
+.body-right p {
+    font-size: 0.5rem;
+}
+
+.body-right .social{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin: 5px;
+}
+
+.body-right .social i{
+    font-size: 0.6rem;
+    /* border: 1px solid red; */
+}
+
+.body-right .social i:hover {
+    color: #FD5A3A;
+    cursor: pointer;
+}
+
+.body-right button{
+    border: #FD5A3A solid 1px;
+    border-radius: 50px;
+    padding: 5px 15px;
+    background-color: black;
+    color:white;
+    font-size: 0.5rem;
+}
+
+/* Default: Large screen (desktop) */
+.body-right h1 {
+    font-size: 1.5rem;
+    color: yellow;
+
+    /* 10 line */
+}
+
+.menu{
+    display: none;
+}
+
+/* Medium screen (tablet, e.g., 768px - 991.98px) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .body-right h1 {
+        color: green;
+    }
+}
+
+/* Small screen (mobile, less than 768px) */
+@media (max-width: 767.98px) {
+    .body-right h1 {
+        font-size: 0.5rem;
+        color: red;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .header-right{
+        display: none;
+    }
+}
